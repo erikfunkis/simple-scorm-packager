@@ -1,4 +1,4 @@
-`version 0.2.3`
+`version 0.2.4`
 
 ## Documentation
 
@@ -33,6 +33,7 @@ npm install simple-scorm-packager
     * `outputFolder` {String} The folder path where you want the zip file
     * `size` {Bytes} Provide the package size, automatically calculated when not set,
     * `name` {String} Package name, defaults to scorm title
+    * `useNameAsIs` {Boolean} If true, the `package.name` will be used "as is" without any trimming etc.
     * `author` {String} Author name, used as default for vcard if not provided
     * `version` {String} Package version (major.minor.patch), defaults to `1.0.0`
     * `date` {String} Package date, defaults to now date(YYYY-MM-DD)
@@ -69,6 +70,8 @@ scopackager({
   startingPage: 'index.html',
   source: './myProjectFolder',
   package: {
+    name: "lms-package_0.0.1_2004v4",
+    useNameAsIs: true,
     version: "0.0.1",
     zip: true,
     outputFolder: './scormPackages'

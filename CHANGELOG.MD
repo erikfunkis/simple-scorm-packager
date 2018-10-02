@@ -1,5 +1,8 @@
 # scopackager changelog
 
+## 0.2.4
+* Allow for flag ”useNameAsIs” to use fully custom zip package names
+
 ## 0.2.3
 
 * fixed mastery score to 0
