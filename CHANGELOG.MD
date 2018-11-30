@@ -1,5 +1,8 @@
 # scopackager changelog
 
+## 0.2.5
+* Fix issue where file source would be included in the manifest file href's. 
+
 ## 0.2.4
 * Allow for flag ”useNameAsIs” to use fully custom zip package names
 
